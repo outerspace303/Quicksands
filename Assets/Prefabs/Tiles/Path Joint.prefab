@@ -7,10 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1429410490134095204, guid: d11dbfe000f2eae4cbb1bdcdec607bc1, type: 3}
+      propertyPath: m_text
+      value: 0,0
+      objectReference: {fileID: 0}
     - target: {fileID: 2059190647153296998, guid: d11dbfe000f2eae4cbb1bdcdec607bc1, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -2432090755550338912, guid: 059fad92a63fef948a7397ea2d70ad87, type: 3}
+    - target: {fileID: 6456451142977187840, guid: d11dbfe000f2eae4cbb1bdcdec607bc1, type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6950236423807184041, guid: d11dbfe000f2eae4cbb1bdcdec607bc1, type: 3}
       propertyPath: m_Name
       value: Path Joint
