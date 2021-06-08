@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 4299750730101982564}
   - component: {fileID: 9168013714131218587}
   - component: {fileID: 3673294625876273929}
+  - component: {fileID: 2575109162672776927}
   - component: {fileID: -2690150814575170371}
   m_Layer: 0
   m_Name: Ram
@@ -151,6 +152,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 3398cdd4cd7d2654986eeb97493736bc, type: 3}
+--- !u!114 &2575109162672776927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5663106801060505031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f9612985b4e2fa4e98c0df7440ad167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-2690150814575170371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,3 +177,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHitPoints: 5
+  currentHitPoints: 0
