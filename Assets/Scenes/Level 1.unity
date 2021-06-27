@@ -1072,13 +1072,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.21104352, y: -0, z: -0, w: 0.97747666}
-  m_LocalPosition: {x: 19.5, y: 22.79, z: -25.9}
+  m_LocalRotation: {x: 0.60876137, y: 0, z: 0, w: 0.7933534}
+  m_LocalPosition: {x: 40, y: 80, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 24.367, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 75, y: 0, z: 0}
 --- !u!1001 &1065100614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2192,6 +2192,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2552762087988096076, guid: ef6ce306986539c4ebd5802045c959a2, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2552762089616139782, guid: ef6ce306986539c4ebd5802045c959a2, type: 3}
       propertyPath: m_Name
       value: Canvas
