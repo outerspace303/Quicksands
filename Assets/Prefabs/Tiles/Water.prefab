@@ -39,7 +39,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5400579950432300055}
-  m_Mesh: {fileID: -2432090755550338912, guid: 09cbc342771bf3e409a602b3e132e30a, type: 3}
+  m_Mesh: {fileID: -2432090755550338912, guid: 76afb7f53d6d2964798fac88c247a47a, type: 3}
 --- !u!23 &3293834311647765234
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -5.771184, y: 3.1052673, z: 3.6038175, w: -5.3816457}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -292,7 +292,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6950236423807184041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5968017761567559151}
@@ -326,4 +326,4 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 0.5, z: 10}
-  m_Center: {x: -5, y: 0.5, z: -5}
+  m_Center: {x: 0, y: 0.25, z: 0}
