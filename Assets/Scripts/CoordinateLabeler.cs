@@ -10,7 +10,7 @@ public class CoordinateLabeler : MonoBehaviour
 {
     [SerializeField] private Color defaultColor = Color.black;
     [SerializeField] private Color blockedColor = Color.red;
-    [SerializeField] private Color exploredColor = Color.yellow;
+    [SerializeField] private Color exploredColor = Color.magenta;
     [SerializeField] private Color pathColor = new Color(1f, 0.5f, 0f);
     
     private TextMeshPro label;
@@ -27,14 +27,13 @@ public class CoordinateLabeler : MonoBehaviour
 
     private void Update()
     {
-        label.enabled = true;
+
         if (!Application.isPlaying)
         {
             DisplayCoordinates();
             UpdateObjectName();
             
         }
-
         SetLabelColor();
         ToggleLabels();
 
