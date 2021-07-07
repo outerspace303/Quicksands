@@ -1,10 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 public class GridManager : MonoBehaviour
 {
     [SerializeField] private Vector2Int gridSize;
+    [SerializeField] private int gridSizeXStart;
+    [SerializeField] private int gridSizeYStart;
 
     [Tooltip("World grid size - should match UnityEditor snap settings")] 
     [SerializeField]
@@ -33,6 +36,16 @@ public class GridManager : MonoBehaviour
         }
     }
 
+    public void ResetNodes()
+    {
+        foreach (KeyValuePair<Vector2Int, Node> entry in grid)
+        {
+            entry.Value.connectedTo = null;
+            entry.Value.isExplored = false;
+            entry.Value.isPath = false;
+        }
+    }
+
     public Vector2Int GetCoordinatesFromPosition(Vector3 position)
     {
         Vector2Int coordinates = new Vector2Int();
@@ -51,9 +64,9 @@ public class GridManager : MonoBehaviour
 
     private void CreateGrid()
     {
-        for (int x = 0; x < gridSize.x; x++)
+        for (int x = gridSizeXStart; x < gridSize.x; x++)
         {
-            for (int y = 0; y < gridSize.y; y++)
+            for (int y = gridSizeYStart; y < gridSize.y; y++)
             {
                 Vector2Int coordinates = new Vector2Int(x, y);
                 grid.Add(coordinates, new Node(coordinates, true));
