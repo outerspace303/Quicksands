@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class PathFinder : MonoBehaviour
 {
-    [SerializeField] private Vector2Int startCoordinates;
+    [SerializeField] private Vector2Int startCoordinates; 
+    public Vector2Int StartCoordinates => startCoordinates;
+    
     [SerializeField] private Vector2Int destinationCoordinates;
+    public Vector2Int DestinationCoordinates => destinationCoordinates;
 
     private Node startNode;
     private Node destinationNode;
@@ -25,13 +28,13 @@ public class PathFinder : MonoBehaviour
         if (_gridManager != null)
         {
             grid = _gridManager.Grid;
+            startNode = grid[startCoordinates];
+            destinationNode = grid[destinationCoordinates];
         }
     }
 
     private void Start()
     {
-        startNode = _gridManager.Grid[startCoordinates];
-        destinationNode = _gridManager.Grid[destinationCoordinates];
         GetNewPath();
     }
 
@@ -69,6 +72,9 @@ public class PathFinder : MonoBehaviour
 
     private void BreadthFirstSearch()
     {
+        startNode.isWalkable = true;
+        destinationNode.isWalkable = true;
+        
         frontier.Clear();
         reached.Clear();
         
